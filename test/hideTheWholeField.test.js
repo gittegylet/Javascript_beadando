@@ -25,7 +25,7 @@ describe("", function () {
         it("Aknamező-teszt-5 (a 'hideTheWholeField' függvény tesztje)", function () {
 
 
-            //Megjegyzés:  A függvény valamennyi cella értékét egyel növeli
+            //Megjegyzés:  A függvény valamennyi cella értékét eggyel növeli
             //             (pl. 0-kat 1-re változtatva) és egyben negálja ->
             //             Vagyis a NEGATÍV cellaérték fogja jelenteni a fel nem fordított mezőt!
             //Megjegyzés2: a cellaértékek eggyel történő megnövelésére azért van szükség,
