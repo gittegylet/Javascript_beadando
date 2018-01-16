@@ -1,4 +1,5 @@
 ﻿
+
 function showEverything(aknaMezo) {
 
     for (var i = 0; i < aknaMezo.length; i++) {

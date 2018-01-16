@@ -5,29 +5,29 @@ function updateCell (mineField) {
 
     var y = 0;
 
-    aknaMezo.forEach(function (sorok) {
+    aknaMezo.forEach(function (sor) {
 
-        let cellak = sorok.querySelectorAll('td');
+        let cellak = sor.querySelectorAll('td');
 
         var x = 0;
 
-        cellak.forEach(function (cell) {
+        cellak.forEach(function (cella) {
 
-            if (mineField[y][x] != 12 && mineField[y][x] > 0 && cell.innerText != mineField[y][x] - 1 &&
-                cell.getAttribute('class') != 'visible') {
+            if (mineField[y][x] != 12 && mineField[y][x] > 0 && cella.innerText != mineField[y][x] - 1 &&
+                cella.getAttribute('class') != 'visible') {
 
-                cell.innerText = mineField[y][x] - 1;
-                cell.classList.remove('sor-oszlop');
-                cell.classList.add('visible');
+                cella.innerText = mineField[y][x] - 1;
+                cella.classList.remove('sor-oszlop');
+                cella.classList.add('visible');
 
             }
             else if (mineField[y][x] == 12) {
 
-                cell.innerText = '¤';
-                if (cell.getAttribute('class') == 'sor-oszlop') cell.classList.remove('sor-oszlop');
-                else if (cell.getAttribute('class') == 'visible') cell.classList.remove('visible');
+                cella.innerText = '¤';
+                if (cella.getAttribute('class') == 'sor-oszlop') cella.classList.remove('sor-oszlop');
+                else if (cella.getAttribute('class') == 'visible') cella.classList.remove('visible');
 
-                cell.classList.add('predicted');
+                cella.classList.add('predicted');
 
             }
 
