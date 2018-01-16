@@ -34,7 +34,6 @@ function generateMineField(Size, MineCount) {
 function  aknaSzamlalo(aknamezo, MineCount) {
 
     var aknak = 0;
-    var teszt1 = [];
 
     aknamezo.forEach(function (item) {
 
@@ -44,11 +43,6 @@ function  aknaSzamlalo(aknamezo, MineCount) {
 
         }).length;
 
-        teszt1.push(item.filter(function (x) {
-
-            return x < 0;
-
-        }).length);
 
     });
 
