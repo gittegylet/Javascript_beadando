@@ -3,9 +3,9 @@ function isAnyNonBombFieldStillHidden(aknamezo) {
 
     var x1 = 0;
     aknamezo.forEach(function (row){
-        x1 += row.filter(function (item) {
+        x1 += row.filter(function (field) {
 
-            return item < 0 && item > -12;
+            return field < 0 && field > -12;
 
         }).length;
 
