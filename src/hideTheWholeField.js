@@ -4,9 +4,9 @@ function hideTheWholeField(aknamezo) {
     var aknamezo2 = [];
     n = 0;
 
-    aknamezo.forEach(function (y) {
+    aknamezo.forEach(function (row) {
         aknamezo2[n] = [];
-        aknamezo2[n] = y.map(function (item) {
+        aknamezo2[n] = row.map(function (item) {
             return -Math.abs(++item);
 
         });

@@ -10,10 +10,10 @@ function calculateNeighbourhood(aknamezo) {
 
         var oszlop = 0;
         aknaMezo2[sor] = [];
+        
+        row.forEach(function (field) {
 
-        row.forEach(function (cell) {
-
-            if (cell == -1) aknaMezo2[sor][oszlop] = 11;
+            if (field == -1) aknaMezo2[sor][oszlop] = 11;
             else {
                 aknaSzam = aknaTerkep(aknamezo, oszlop, sor);
                 aknaMezo2[sor][oszlop] = aknaSzam;
