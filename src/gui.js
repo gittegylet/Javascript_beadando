@@ -29,14 +29,14 @@ function guiInitialise(mineField) {
 
     for (let i = 0; i < size; i++) {
 
-        let tr = document.createElement("tr");
+        let tr = document.createElement('tr');
         aknaTabla.append(tr);
 
         tr.setAttribute('class', 'oszlop-sor');
 
         for (let j = 0; j < size; j++) {
 
-            let td = document.createElement("td");
+            let td = document.createElement('td');
 
 
             tr.append(td);
